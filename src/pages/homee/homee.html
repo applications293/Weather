@@ -1,0 +1,61 @@
+<!--
+  Generated template for the HomeePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <!--<ion-title text-center>WeatherApp v2</ion-title>-->
+    <ion-searchbar class="ion-searchbar" (search)="selected($event)"></ion-searchbar>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid *ngIf="weather">
+
+    <ion-row>
+      <ion-col wdidth-50 ofsset-25>
+        <h2 class="city">{{ weather.name + ', ' + weather.sys.country}} <span>{{ date }}</span></h2>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div class="icon">
+          <img src="//openweathermap.org/img/w/{{ weather.weather[0].icon }}.png" width="150" height="150">
+        </div>
+
+        <h3 class="desc">{{ weather.weather[0].description }}</h3>
+        <h1 class="humidity">{{ degr }}&deg;</h1>
+        <div class="toggleC" (click)="celcius()"><a href="#">&deg;C</a></div>
+        <div class="toggleF" (click)="fahrenheit()"><a href="#">&deg;F</a></div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col width-100>
+        <ion-list>
+          <ion-item  class="list">
+            <strong>Min Temp:</strong> {{ minTemp }}&deg;
+          </ion-item>
+          <ion-item>
+            <strong>Humidity:</strong> {{ weather.main.humidity }}%
+          </ion-item>
+          <ion-item>
+            <strong>Pressure:</strong> {{ weather.main.pressure +' hpa' }}
+          </ion-item>
+          <ion-item>
+            <strong>Geo loc:</strong> {{ '['+weather.coord.lat + ', ' + weather.coord.lon+']'}}
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <!--<button ion-button full (click)="selected()">View data</button>-->
+</ion-content>

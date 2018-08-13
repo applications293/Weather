@@ -1,0 +1,108 @@
+page-homee {
+    /*ion-content{
+        background-image: url('/assets/imgs/bg.jpg');
+    }*/
+    ion-content{
+        background: rgb(189,191,255);
+        background: -moz-linear-gradient(left, rgb(189,191,255) 0%, rgb(230,240,242) 100%, rgb(240,243,255) 100%);
+        background: -webkit-linear-gradient(left, rgb(189,191,255) 0%, rgb(230,240,242) 100%, rgb(240,243,255) 100%);
+        background: linear-gradient(to right, rgb(189,191,255) 0%, rgb(230,240,242) 100%, rgb(240,243,255) 100%); 
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    ion-item{
+        opacity: .7;
+        background: rgb(140,255,254);
+        background: -moz-linear-gradient(left, rgb(140,255,254) 0%, rgb(230,240,242) 100%, rgb(240,243,255) 100%);
+        background: -webkit-linear-gradient(left, rgb(140,255,254) 0%, rgb(230,240,242) 100%, rgb(240,243,255) 100%);
+        background: linear-gradient(to right, rgb(140,255,254) 0%, rgb(230,240,242) 100%, rgb(240,243,255) 100%);
+        border-radius: 30px;
+        transform: translateY(-125px);
+    }
+    ion-label{
+        font-size: 18px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        color: #000000;
+        font-weight: bolder;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        
+    }
+
+    .today{
+        transform: translateY(-108px);
+     
+    }
+
+    p{
+        transform: translateY(-53px);
+    }
+    .top{
+        background: #5EBDB9;
+        background: -moz-linear-gradient(left, #5EBDB9 0%, #73EAF0 100%);
+        background: -webkit-linear-gradient(left, #5EBDB9 0%, #73EAF0 100%);
+    }
+    .top ion-item{
+        background: #5EBDB9;
+        background: -moz-linear-gradient(left, #5EBDB9 0%, #73EAF0 100%);
+        background: -webkit-linear-gradient(left, #5EBDB9 0%, #73EAF0 100%);
+    }
+
+    span{
+        float: right;
+    }
+    
+    //.city{ color: white;}
+
+    .humidity{
+        font-size: 90px;
+        text-align: center;
+        font-weight: normal;
+        transform: translate(18px,-80px);
+    }
+
+    a:link{text-decoration: none;}
+    a:active{background-color: springgreen;
+             text-decoration: underline;}
+    
+    .toggleC{
+        transform: translate(245px,-164px);
+        font-size: 21px;
+    }
+    .toggleF{
+        transform: translate(245px,-163px);
+        font-size: 21px;
+    }
+    
+
+    .location, .icon, .desc{
+        text-align: center;
+    }
+
+    .location{
+        font-size:40px;
+    }
+    .desc{
+        font-size:30px;
+        transform: translateY(-65px);
+    }
+
+    .icon{
+        transform: translateY(-11px);
+    }
+
+    .ion-searchbar {
+        opacity: .7;
+        background: rgb(140,255,254);
+        background: -moz-linear-gradient(left, rgb(140,255,254) 0%, rgb(230,240,242) 100%, rgb(240,243,255) 100%);
+        background: -webkit-linear-gradient(left, rgb(140,255,254) 0%, rgb(230,240,242) 100%, rgb(240,243,255) 100%);
+        background: linear-gradient(to right, rgb(140,255,254) 0%, rgb(230,240,242) 100%, rgb(240,243,255) 100%);
+        
+    }
+
+    
+
+}

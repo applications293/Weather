@@ -1,3 +1,17 @@
 page-home {
+    
+    ion-content{
+        background-image: url('src/assets/imgs/logo.png');
+    }
+    ion-grid{
+        background-color:rgba(157, 157, 192, 0.247);
+    }
+
+    ion-col{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 50;
+
+    }
+
 
 }
